@@ -537,3 +537,233 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XUMyuv"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XUMyuv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XUMyuv
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c1fd3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1fd3.dir/build.make CMakeFiles/cmTC_c1fd3.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XUMyuv»
+        Building C object CMakeFiles/cmTC_c1fd3.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c1fd3.dir/src.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XUMyuv/src.c
+        Linking C executable cmTC_c1fd3
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1fd3.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c1fd3.dir/src.c.o -o cmTC_c1fd3 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XUMyuv»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:498 (check_library_exists)"
+      - "external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-04ZNVE"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-04ZNVE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-04ZNVE
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2660/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f2660.dir/build.make CMakeFiles/cmTC_f2660.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-04ZNVE»
+        Building C object CMakeFiles/cmTC_f2660.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_f2660.dir/CheckFunctionExists.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-04ZNVE/CheckFunctionExists.c
+        Linking C executable cmTC_f2660
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2660.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_f2660.dir/CheckFunctionExists.c.o -o cmTC_f2660  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-04ZNVE»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:513 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-BmYPGr"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-BmYPGr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-BmYPGr
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1e16/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e1e16.dir/build.make CMakeFiles/cmTC_e1e16.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-BmYPGr»
+        Building C object CMakeFiles/cmTC_e1e16.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_e1e16.dir/CheckFunctionExists.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-BmYPGr/CheckFunctionExists.c
+        Linking C executable cmTC_e1e16
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1e16.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_e1e16.dir/CheckFunctionExists.c.o -o cmTC_e1e16 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-BmYPGr»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:527 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-9qTwem"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-9qTwem"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-9qTwem
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_321fd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_321fd.dir/build.make CMakeFiles/cmTC_321fd.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-9qTwem»
+        Building C object CMakeFiles/cmTC_321fd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_321fd.dir/CheckFunctionExists.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-9qTwem/CheckFunctionExists.c
+        Linking C executable cmTC_321fd
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_321fd.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_321fd.dir/CheckFunctionExists.c.o -o cmTC_321fd 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-9qTwem»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:536 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XdPWBv"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XdPWBv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XdPWBv
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c52ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c52ab.dir/build.make CMakeFiles/cmTC_c52ab.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XdPWBv»
+        Building C object CMakeFiles/cmTC_c52ab.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_c52ab.dir/CheckFunctionExists.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XdPWBv/CheckFunctionExists.c
+        Linking C executable cmTC_c52ab
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c52ab.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_c52ab.dir/CheckFunctionExists.c.o -o cmTC_c52ab 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-XdPWBv»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:545 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-3vwCDu"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-3vwCDu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-3vwCDu
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3bcf9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3bcf9.dir/build.make CMakeFiles/cmTC_3bcf9.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-3vwCDu»
+        Building C object CMakeFiles/cmTC_3bcf9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_3bcf9.dir/CheckFunctionExists.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-3vwCDu/CheckFunctionExists.c
+        Linking C executable cmTC_3bcf9
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bcf9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_3bcf9.dir/CheckFunctionExists.c.o -o cmTC_3bcf9 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-3vwCDu»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/home/rast/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:555 (check_library_exists)"
+      - "external/glfw/src/CMakeLists.txt:187 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-gIIKlG"
+      binary: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-gIIKlG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/rast/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/Xandria/Xandria/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-gIIKlG
+        
+        Run Build Command(s):/home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25399/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25399.dir/build.make CMakeFiles/cmTC_25399.dir/build
+        gmake[1]: вход в каталог «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-gIIKlG»
+        Building C object CMakeFiles/cmTC_25399.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_25399.dir/CheckFunctionExists.c.o -c /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-gIIKlG/CheckFunctionExists.c
+        Linking C executable cmTC_25399
+        /home/rast/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25399.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_25399.dir/CheckFunctionExists.c.o -o cmTC_25399  -lICE 
+        gmake[1]: выход из каталога «/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/CMakeScratch/TryCompile-gIIKlG»
+        
+      exitCode: 0
+...

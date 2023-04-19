@@ -92,6 +92,9 @@ Xandria_EXTERNAL_OBJECTS =
 
 Xandria: CMakeFiles/Xandria.dir/src/main.cpp.o
 Xandria: CMakeFiles/Xandria.dir/build.make
+Xandria: external/glfw/src/libglfw3.a
+Xandria: /usr/lib/x86_64-linux-gnu/librt.a
+Xandria: /usr/lib/x86_64-linux-gnu/libm.so
 Xandria: CMakeFiles/Xandria.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rast/Документы/Xandria/Xandria/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Xandria"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Xandria.dir/link.txt --verbose=$(VERBOSE)

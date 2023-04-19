@@ -1,3 +1,9 @@
 /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/Xandria.dir
 /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/edit_cache.dir
 /home/rast/Документы/Xandria/Xandria/build/CMakeFiles/rebuild_cache.dir
+/home/rast/Документы/Xandria/Xandria/build/external/glfw/CMakeFiles/edit_cache.dir
+/home/rast/Документы/Xandria/Xandria/build/external/glfw/CMakeFiles/rebuild_cache.dir
+/home/rast/Документы/Xandria/Xandria/build/external/glfw/src/CMakeFiles/glfw.dir
+/home/rast/Документы/Xandria/Xandria/build/external/glfw/src/CMakeFiles/update_mappings.dir
+/home/rast/Документы/Xandria/Xandria/build/external/glfw/src/CMakeFiles/edit_cache.dir
+/home/rast/Документы/Xandria/Xandria/build/external/glfw/src/CMakeFiles/rebuild_cache.dir
