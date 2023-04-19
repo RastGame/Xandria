@@ -1,0 +1,3 @@
+/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/Xandria.dir
+/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/edit_cache.dir
+/home/rast/Документы/Xandria/Xandria/build/CMakeFiles/rebuild_cache.dir

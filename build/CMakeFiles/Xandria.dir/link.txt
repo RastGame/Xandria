@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Xandria.dir/src/main.cpp.o -o Xandria 
